@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-@font-face {
-    font-family: optane;
-    src: url(../fonts/Optane-Bold.tff);
-    font-weight: bold;
-}
 *{
 	padding: 0;
 	margin: 0;
@@ -63,6 +58,9 @@ nav div{
 .logo a{
 		font-family: 'optane'; 
 		font-size: 1.7em;
+}
+.navigate_element{
+ 
 }
 @media(max-width: 800px){
 
