@@ -15,15 +15,32 @@ a{
 
 /***************Main Background**********************/
 header{
-	background-image: url('../img/hero.jpg');
+	background-image: url('../img/hero.jpeg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	height: 550px;
+	height: 80vh;
 	padding: 0;
-}	
-nav{
+}
+.navigation_phone{
+	display: none;
+	transition: all 1s ease-in 0s;
+}
+.navigation{
 	display: flex;
+	position: sticky;
+	top: 0;
+	left: 0;
+	transition: background-color 1s ease-in 0s;
+}
+.navigation_scroll{
+	background-color:#599ef2;
+	padding: 0.5em 0em;
+}
+.icon{
+	padding: 0.5em;
+	border: solid #e3ecf7 2px;
+	border-radius: 7px;
 }
 nav div{
   text-align: center;
@@ -32,12 +49,12 @@ nav div{
 }
 .caption{
 	text-align: center;
-	background: rgba(0,0,0,0.3);
-	margin-top:3em;
-	padding: 2em;
+	margin-top:2em;
+	font-weight: bold;
+	padding: 3em;
 	width:fill;
 	color: white;
-	font-size: 1.75em;
+	font-size: 2em;
 	animation: anime 3s ease-in 0s 1;
 }
 @keyframes anime{
@@ -50,68 +67,63 @@ nav div{
 }	
 .logo{
 	text-align: center;
-	padding-bottom: 3em;
-	padding-top: 6em;
-	border: 4px solid blue;
-	border-top:0px;
 }
-.logo a{
+.navigation div:nth-of-type(4) a{
 		font-family: 'optane'; 
-		font-size: 1.7em;
+		font-size: 2em;
+		color: white;
 }
-.navigate_element{
- 
+.navigation a:hover{
+	color: rgba(255,255,255,0.7);
 }
-@media(max-width: 800px){
-
-	.caption{
-	text-align: center;
-	margin-top:3em;
-	padding: 2em;
+.navigation div:nth-of-type(4) a:hover{
 	color: white;
-	font-size: 1em;
-    }
-    .logo{
-	padding-bottom: 2em;
-	padding-top: 4em;
-    border: 3px solid blue;
-    border-top:0px;
-    }
-    .logo a{
-    font-size: 1em;
-    }
-    a{
-    	font-size: 0.8em;
-    }
-    header{
-    	height: 75vh;
-    }
-}
-@media(max-width: 600px){
-    .logo{
-	padding-bottom: 2em;
-	padding-top: 3em;
-	font-size: 1em;
-    }
-    .logo a{
-    font-size: 1em;
-    }
-    a{
-    	font-size: 0.6em;
-    }
-
-}
-a:hover{
-	border-bottom: 1.5px solid white;
-	padding-bottom: 0.5em;
-}
-nav div:nth-of-type(7) a:hover{
-	border-bottom: 0px;
-}
-nav div:nth-of-type(4) a:hover{
-	border-bottom: 0px;
 }
 
+@media(max-width: 900px){
+    .navigation{
+    	display: none;
+    }
+    .navigation_phone{
+    	display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	color: black;
+    	background-color: #599ef2;
+    	position: sticky;
+		top: 0;
+		left: 0;
+		color: black;
+    }
+    .navigation_phone div {
+    	padding: 1em;
+    }
+    .button_click{
+    	display: none;
+    	width: 100vw;
+    	background-color: #599ef2;
+    }
+    .button_click div{
+    	text-align: left;
+    	font-size: 1em;
+    	padding: 0.5em;
+    }
+    .logo_phone{
+      text-align: left;
+
+    }
+    .logo_phone a{
+       font-family: 'optane';
+       font-size: 1.5em;
+       color: white;
+    }
+    .button{
+    	text-align: right;
+    }
+    .button_click div a:hover{
+	    color: rgba(255,255,255,0.7);
+    }
+}
 
 /************** Review Section**************/
 

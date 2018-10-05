@@ -1,3 +1,5 @@
+// reviews section on button click to change the content 
+
 function Reviews(image_url,person_name,review_statement){
 	this.image_url = image_url;
 	this.person_name = person_name;
@@ -26,3 +28,42 @@ var count=0;
        		count=2;
        set_review(reviews[count]);
  });
+
+
+
+// scroll event for the navigation tab 
+	var nav=document.querySelector(".navigation");
+	var logo = document.querySelector('.navigation div:nth-of-type(4)')
+	window.addEventListener('scroll',function(){
+		if(window.pageYOffset!=0)
+		 {
+		 	nav.classList.add('navigation_scroll');
+		 	logo.classList.remove('logo');
+	 	 }
+		else
+         {
+         	nav.classList.remove('navigation_scroll');
+         	logo.classList.add('logo');
+         }
+	});
+
+
+// open navigation tab in phone view
+
+var nav_button = document.querySelector(".button")
+var nav_tab = document.querySelector('.button_click')
+var caption = document.querySelector('.caption')
+var open = true
+nav_button.addEventListener("click",function(){
+  if(open)
+  {
+  	  nav_tab.style.display = "block"; 
+  	  caption.style.display = "none";
+  }
+  else
+  {
+   	  nav_tab.style.display = "none"; 
+   	  caption.style.display = "block";
+  }
+  open =!open
+});
