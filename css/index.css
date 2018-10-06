@@ -19,7 +19,7 @@ header{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	height: 80vh;
+	height: 500px;
 	padding: 0;
 }
 .navigation_phone{
@@ -80,7 +80,7 @@ nav div{
 	color: white;
 }
 
-@media screen and(max-width: 900px){
+@media screen and(max-width: 768px){
     .navigation{
     	display: none;
     }
