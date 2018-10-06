@@ -80,7 +80,7 @@ nav div{
 	color: white;
 }
 
-@media(max-width: 900px){
+@media screen and(max-width: 900px){
     .navigation{
     	display: none;
     }
@@ -124,7 +124,50 @@ nav div{
 	    color: rgba(255,255,255,0.7);
     }
 }
+@media (max-width: 900px){
+    .navigation{
+    	display: none;
+    }
+    .navigation_phone{
+    	display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	color: black;
+    	background-color: #599ef2;
+    	position: sticky;
+		top: 0;
+		left: 0;
+		color: black;
+    }
+    .navigation_phone div {
+    	padding: 1em;
+    }
+    .button_click{
+    	display: none;
+    	width: 100vw;
+    	background-color: #599ef2;
+    }
+    .button_click div{
+    	text-align: left;
+    	font-size: 1em;
+    	padding: 0.5em;
+    }
+    .logo_phone{
+      text-align: left;
 
+    }
+    .logo_phone a{
+       font-family: 'optane';
+       font-size: 1.5em;
+       color: white;
+    }
+    .button{
+    	text-align: right;
+    }
+    .button_click div a:hover{
+	    color: rgba(255,255,255,0.7);
+    }
+}
 /************** Review Section**************/
 
 .reviews{
