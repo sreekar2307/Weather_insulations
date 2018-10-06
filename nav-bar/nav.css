@@ -24,7 +24,8 @@ a{
 }
 .navigation{
     display: flex;
-    position: sticky;
+    position: fixed;
+    width: 100vw;
     top: 0;
     left: 0;
     background-color: #4c3c3c;
@@ -59,9 +60,9 @@ a{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        color: black;
         background-color: #4c3c3c;
-        position: sticky;
+        position: fixed;
+        width: 100vw;
         top: 0;
         left: 0;
         color: black;

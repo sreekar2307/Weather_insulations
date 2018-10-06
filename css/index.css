@@ -28,7 +28,8 @@ header{
 }
 .navigation{
 	display: flex;
-	position: sticky;
+	position: fixed;
+    width: 100vw;
 	top: 0;
 	left: 0;
 	transition: background-color 1s ease-in 0s;
@@ -49,9 +50,8 @@ nav div{
 }
 .caption{
 	text-align: center;
-	margin-top:2em;
 	font-weight: bold;
-	padding: 3em;
+	padding: 15%;
 	width:fill;
 	color: white;
 	font-size: 2em;
@@ -79,51 +79,6 @@ nav div{
 .navigation div:nth-of-type(4) a:hover{
 	color: white;
 }
-
-@media screen and(max-width: 768px){
-    .navigation{
-    	display: none;
-    }
-    .navigation_phone{
-    	display: flex;
-    	flex-direction: row;
-    	flex-wrap: wrap;
-    	color: black;
-    	background-color: #4c3c3c;
-    	position: sticky;
-		top: 0;
-		left: 0;
-		color: black;
-    }
-    .navigation_phone div {
-    	padding: 1em;
-    }
-    .button_click{
-    	display: none;
-    	width: 100vw;
-    	background-color: #4c3c3c;
-    }
-    .button_click div{
-    	text-align: left;
-    	font-size: 1em;
-    	padding: 0.5em;
-    }
-    .logo_phone{
-      text-align: left;
-
-    }
-    .logo_phone a{
-       font-family: 'optane';
-       font-size: 1.5em;
-       color: white;
-    }
-    .button{
-    	text-align: right;
-    }
-    .button_click div a:hover{
-	    color: rgba(255,255,255,0.7);
-    }
-}
 @media (max-width: 900px){
     .navigation{
     	display: none;
@@ -132,15 +87,15 @@ nav div{
     	display: flex;
     	flex-direction: row;
     	flex-wrap: wrap;
-    	color: black;
+        width: 100vw;
     	background-color: #4c3c3c;
-    	position: sticky;
+    	position: fixed;
 		top: 0;
 		left: 0;
 		color: black;
     }
     .navigation_phone div {
-    	padding: 1em;
+    	padding: 1.5em;
     }
     .button_click{
     	display: none;
