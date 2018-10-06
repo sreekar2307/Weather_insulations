@@ -34,7 +34,7 @@ header{
 	transition: background-color 1s ease-in 0s;
 }
 .navigation_scroll{
-	background-color:#599ef2;
+	background-color:#4c3c3c;
 	padding: 0.5em 0em;
 }
 .icon{
@@ -89,7 +89,7 @@ nav div{
     	flex-direction: row;
     	flex-wrap: wrap;
     	color: black;
-    	background-color: #599ef2;
+    	background-color: #4c3c3c;
     	position: sticky;
 		top: 0;
 		left: 0;
@@ -101,7 +101,7 @@ nav div{
     .button_click{
     	display: none;
     	width: 100vw;
-    	background-color: #599ef2;
+    	background-color: #4c3c3c;
     }
     .button_click div{
     	text-align: left;
@@ -133,7 +133,7 @@ nav div{
     	flex-direction: row;
     	flex-wrap: wrap;
     	color: black;
-    	background-color: #599ef2;
+    	background-color: #4c3c3c;
     	position: sticky;
 		top: 0;
 		left: 0;
@@ -145,7 +145,7 @@ nav div{
     .button_click{
     	display: none;
     	width: 100vw;
-    	background-color: #599ef2;
+    	background-color: #4c3c3c;
     }
     .button_click div{
     	text-align: left;
