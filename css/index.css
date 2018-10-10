@@ -144,7 +144,7 @@ nav div{
 	width: 100%;
 	height: 300px;
 	padding-top: 2em;
-	background-color: #fff4f4;
+	background-color: #F6FFFD;
 }
 .reviews h1{
  text-align: center;
@@ -204,8 +204,8 @@ nav div{
 }
 .service{
     display: flex;
-    border: 1px solid brown;
-    border-radius: 15px;
+    box-shadow:0 1px 5px 0 rgba(0,0,0,.3);
+    border-radius: 5px;
     margin:0 0.5em;
     width: 30%;
     flex: 1 1 auto; 
