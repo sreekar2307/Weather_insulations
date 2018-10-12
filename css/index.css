@@ -27,11 +27,14 @@ header{
 	transition: background-color 1s ease-in 0s;
 }
 .navigation{
-	display: flex;
-	position: fixed;
-    width: 100vw;
-	top: 0;
-	left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
 	transition: background-color 1s ease-in 0s;
 }
 .navigation_scroll{
@@ -45,8 +48,6 @@ header{
 }
 nav div{
   text-align: center;
-  flex:1 1 auto;
-  padding-top: 1em;
 }
 .caption{
 	text-align: center;
@@ -86,6 +87,7 @@ nav div{
     .navigation_phone{
     	display: flex;
     	flex-direction: row;
+        justify-content: space-between;
     	flex-wrap: wrap;
         width: 100vw;
     	background-color: #4c3c3c;
