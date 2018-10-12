@@ -74,6 +74,7 @@ body{
 }
 .phone_number i{
 	margin-left: -20px;
+	color: #cc0000;
 }
 
 .box_login form input[type="submit"]:hover{
