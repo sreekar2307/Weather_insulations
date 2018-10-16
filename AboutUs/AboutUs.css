@@ -17,11 +17,11 @@ a{
 
 
 header{
-	background-image: url('../img/hero.jpeg');
+	/*background-image: url('../img/hero.jpeg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	height: 40vh;
+	height: 40vh;*/
 	padding: 0;
 }
 .navigation_phone{
@@ -52,18 +52,19 @@ nav div{
 }
 #caption{
 	text-align: center;
-	margin-top:2em;
+	margin-top:-5em;
 	font-weight: bold;
-	padding: 3em;
+	padding: 6em;
 	width:fill;
-	color: Black;
-    text-shadow: 5px 5px white;
+	color: White;
+   /* text-shadow: 5px 5px white;-->*/
     size: 500%;
 	font-size: 2em;
 	animation: anime 3s ease-in 0s 1;
-	
-}
-@keyframes anime{
+	background:url("http://i584.photobucket.com/albums/ss283/indianpatriot/1836745_3882160430455_2017842115_o1_zps25649615.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}@keyframes anime{
 	from{
 		color: transparent;
 	}
@@ -178,11 +179,13 @@ nav div{
 	padding: 1em;
 }
 .AboutUs{
-	background: rgba(203,211,221,0.6);
+	background: rgb(203,211,221);
 	text-align: center;
+	align-content: center;
 	width: 70%;
-	margin: 15%;
-
+	margin-left:  15%;
+	margin-right:   15%;
+	margin-bottom::  15%;
 
 
 }
@@ -192,12 +195,19 @@ nav div{
 	background: rgba(203,211,221,0.2)
 	text-align: center;
 	width: 70%;
-	margin: 15%;
+	margin-left:  15%;
+	margin-top: 15%;
+	margin-bottom: 10%;
 	font-size:700%; 
+	background:rgb(224, 165, 65);
 
 }
 
 body{  
-		background:url(http://webneel.com/wallpaper/sites/default/files/images/04-2013/28-rain-drops.jpg);
+		/*background:url(http://webneel.com/wallpaper/sites/default/files/images/04-2013/28-rain-drops.jpg);
+	background-size: cover;*/
+	background:url("https://cdn.stocksnap.io/img-thumbs/960w/UVSNXMW1SY.jpg");
+	background-repeat: no-repeat;
 	background-size: cover;
+	/*background:white;*/
 }

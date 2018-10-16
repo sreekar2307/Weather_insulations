@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp</title>
+</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/signup.css">
+<body>
+<div class="box_login">
+	<div  class="hero">
+   		<h1><a href="index.html">Weather Insulations</a></h1>
+    </div>
+    <div>
+    	<form method="post" action="#" class="form_box">
+    		<div><input type="text" name="First_name" required placeholder="First Name"></div>
+    		<div><input type="text" name="Last_name" required placeholder="Last Name"></div>
+    		<div><input type="email" name="email" placeholder = "Email" required></div>
+    		<div class="phone_number"><input type="tel" name="phone_number" placeholder="phone Number" pattern="[6789]{1}[0-9]{9}" minlength="10" maxlength="10" required ><i class="far fa-times-circle"></i></div>
+    		<div class="password"><input type="password" name="password" 
+    			pattern="[a-zA-Z@_$#]*[0-9]+[a-zA-Z@_$#0-9]*" minlength="6" maxlength="12" placeholder="Password"><i class="far fa-eye-slash"></i></div>
+    		<div class="error"><p style="color: #cc0000; font-size: 0.7em; margin-top: -10px">minimum length is 6 characters</p></div>
+    		<div><input type="submit" name="submit" value="Sign Up"></div>
+    	</form>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/signup.js"></script>
+</html>
