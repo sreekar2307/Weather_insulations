@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp</title>
+</head>
+<link rel="stylesheet" type="text/css" href="SignUp.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<body>
+        <!-- Header nav bar and hero background -->
+<header>
+        <div class="head">
+        <nav class="navigation">
+            <div><a href="#">About Us</a></div>
+            <div><a href="#">FAQ</a></div>
+            <div><a href="#">Facilities</a></div>
+            <div class="logo"><a href="" class="font">Weather Insulations</a></div>
+            <div><a href="#">Contact Us</a></div>
+            <div><a href="#">Gallery</a></div>          
+            <div><a href="#"><i class="fas fa-user-plus"></i></a></div>
+        </nav>
+        <!-- for mobile and tablet view view width 900px-->
+        <nav class="navigation_phone">
+            <div class="logo_phone"><a href="">Weather Insulations</a></div>
+            <div class="button"><a href="#" class="icon"><i class="fas fa-bars"></i></a></div>
+            <div class="button_click">
+             <div><a href="#">About us</a></div>
+             <div><a href="#">FAQ</a></div>
+             <div><a href="#">Facilities</a></div>
+             <div><a href="#">Contact Us</a></div>
+             <div><a href="#">Gallery</a></div>
+             <div><a href="#">Login</a></div>
+            </div>
+        </nav>
+    
+    
+    </div>
+    <div  id="caption">
+            Sign Up
+        </div>
+</header>
+    <section class="SignUp">
+        <div id="SignUpHeading">
+            <h1> SignUp </h1>
+        </div>
+<div class="SignUp">
+    <h2>
+    <p>
+    <form action="" method="post">
+    <label for="First name" First name:>First Name:</label>
+    <input type="text" placeholder="John" name="">
+    <label id="First" for="Last name" Last name:>Last Name:</label>
+    <input id="Last" type="text" placeholder="Smith" >
+    <p></p>
+    <label for="Male">Male:</label>
+    <input name="genderChoice" id="Male" type="radio">
+    <label for="Female">Female:</label>
+    <input name="genderChoice" id="Female"
+    type="radio">
+    <label for="Other">Other:</label>
+    <input name="genderChoice" id="Other" type="radio">
+    <p> </p>
+    <label> Email:
+    <input type="Email" placeholder="your email" required="" >
+        </label>
+         <label> Password:
+         <input type="Password" placeholder="your password" pattern="{5,10}" required title="password must be between 5-10 characters" >
+        </label>
+    <p> </p>
+    <label> Phone Number:
+        <input type="tel" name="phone_number" placeholder="your phone number" pattern="[6789]{1}[0-9]{9}" minlength="10" maxlength="10" required="">        
+    </label>
+    </p>
+    </h2>
+</form>
+</div>
+</form>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="SignUp.js"></script>
+</html>
