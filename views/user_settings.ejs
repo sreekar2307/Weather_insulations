@@ -1,0 +1,17 @@
+<% include partials/header%>
+<title>Settings</title>
+<p>first_name: <%= user.first_name %></p>
+<p>last_name: <%= user.last_name %></p>
+<p>phone_number: <%= user.phone_number %></p>
+<form action="/<%= user._id%>/settings/change_password" method="post">
+	Username: <input type="text" name="user_name" value="<%= user.username%>" placeholfer="username" readonly><br><br>
+	<input type="password" name="old_password" placeholder="Old password"><br><br>
+	<input type="password" name="new_password" placeholder="New password"><br><br>
+	<input type="password" name="confirm_password" placeholder="Confirm password"><br><br>
+	<button>Done</button>
+	<% if(password_mismatch){%>
+	  <p>Old password entered is wrong</p>
+	<%}%>  
+</form><br>
+<a href="/<%= user._id%>/settings/delete">Delete Account</a>
+<% include partials/footer%>

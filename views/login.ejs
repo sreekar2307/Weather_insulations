@@ -1,0 +1,24 @@
+<% include partials/header%>
+<title>Signin</title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<div class="box_login">
+   <div  class="hero">
+   		<h1><a href="index.html">Weather Insulations</a></h1>
+   </div>
+   <div class="form_div">
+   		<form action="signin" method="POST">
+		<div><input type="text" name="username" placeholder="username" required></div>
+		<div class="password"><input type="password" name="password" placeholder="Password" required autocomplete="current-password"><i class="far fa-eye-slash"></i></div>
+		<% if(wrong_crendentials) { %>
+		<div class="auth_message">Incorrect username or password</div>
+		<% }%>
+		<div class="button_login"><input type="submit" name="submit_login" value="Sign In" ></div>
+	</form>
+   </div>
+   <div  class="Sign_UP"> <p>Don't have an account? <a href="signup">Sign Up</a></p></div>
+</div>
+<script type="text/javascript" src="js/login.js"></script>
+<% include partials/footer%>
+
+
+
