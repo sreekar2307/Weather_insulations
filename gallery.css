@@ -1,0 +1,269 @@
+#slideshow { 
+     width: 150%; 
+    height: 100%; 
+   
+}
+
+#slideshow > div { 
+    position: absolute; 
+    width: 150%;
+    height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+}
+
+/***************Main Background**********************/
+
+
+header{
+    /*--background-image: url('../img/hero.jpeg');-->*/
+    /*background:url("http://i584.photobucket.com/albums/ss283/indianpatriot/1836745_3882160430455_2017842115_o1_zps25649615.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 80vh*/
+    padding: 0;
+}
+.navigation_phone{
+    display: none;
+    transition: all 1s ease-in 0s;
+}
+.navigation{
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background:rgb(89,158,242);
+    transition: background-color 1s ease-in 0s;
+}
+.navigation_scroll{
+    background-color:#599ef2;
+    padding: 0.5em 0em;
+}
+.icon{
+    padding: 0.5em;
+    border: solid #e3ecf7 2px;
+    border-radius: 7px;
+}
+nav div{
+  text-align: center;
+  flex:1 1 auto;
+  padding-top: 1em;
+}
+#caption{
+    text-align: center;
+    margin-top:-5em;
+    font-weight: bold;
+    padding: 6em;
+    width:fill;
+    color: White;
+   /* text-shadow: 5px 5px white;-->*/
+    size: 500%;
+    font-size: 2em;
+    animation: anime 3s ease-in 0s 1;
+    background:url("http://i584.photobucket.com/albums/ss283/indianpatriot/1836745_3882160430455_2017842115_o1_zps25649615.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+@keyframes anime{
+    from{
+        color: transparent;
+    }
+    to{
+        color: white;
+    }
+}   
+.logo{
+    text-align: center;
+}
+.navigation div:nth-of-type(4) a{
+        font-family: 'optane'; 
+        font-size: 2em;
+        color: white;
+}
+.navigation a:hover{
+    color: rgba(255,255,255,0.7);
+}
+.navigation div:nth-of-type(4) a:hover{
+    color: white;
+}
+
+@media(max-width: 900px){
+    .navigation{
+        display: none;
+    }
+    .navigation_phone{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: black;
+        background-color: #599ef2;
+        background:rgb(89,158,242);
+        position: sticky;
+        top: 0;
+        left: 0;
+        color: black;
+    }
+    .navigation_phone div {
+        padding: 1em;
+    }
+    .button_click{
+        display: none;
+        width: 100vw;
+        background-color: #599ef2;
+    }
+    .button_click div{
+        text-align: left;
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    .logo_phone{
+      text-align: left;
+
+    }
+    .logo_phone a{
+       font-family: 'optane';
+       font-size: 4em;
+       color: white;
+    }
+    .button{
+        text-align: right;
+    }
+    .button_click div a:hover{
+        color: rgba(255,255,255,0.7);
+    }
+}
+
+/************** Review Section**************/
+
+.reviews{
+    width: 100%;
+    height: 300px;
+    padding-top: 2em;
+}
+.reviews h1{
+ text-align: center;
+ font-size: 1.5em;
+ transition-duration: 200ms;
+}
+.reviews_container{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+.reviews_container p{
+    width: 50%;
+    padding:2em;
+    font-style: italic;
+}
+.image_card img{
+    border-radius: 50%;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+.image_card{
+    display: flex;
+    flex-direction:column;
+}
+.image_card h3{
+  font-weight: normal;
+  padding-top:0.5em;
+  text-align: center; 
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.buttons button{
+    background: transparent;
+    border: none;
+    padding: 1em;
+}
+.Gallery{
+    background: rgb(203,211,221);
+    text-align: center;
+    align-content: center;
+    width: 70%;
+    margin-left:  15%;
+    margin-right:   15%;
+    margin-bottom::  15%;
+}
+
+#Gallery
+{
+    background: rgba(203,211,221,0.2)
+    text-align: center;
+    width: 70%;
+    margin-left:  15%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size:700%; 
+    background:rgb(224, 165, 65);
+
+}
+
+body{  
+        /*background:url(http://webneel.com/wallpaper/sites/default/files/images/04-2013/28-rain-drops.jpg);
+    background-size: cover;*/
+    background:url("https://cdn.stocksnap.io/img-thumbs/960w/UVSNXMW1SY.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background:white;*/
+}
+#map{
+    width: 50%;
+    margin-left:  25%;
+    margin-bottom: 10%;
+    margin-top: 5%; 
+    align-content: center;
+}
+#PhoneNo{
+    margin-bottom: 40px;
+    font-size:200%;
+
+
+}
+#Address{
+    font-size:200%;
+}
+/*.head{
+    background:url("http://i584.photobucket.com/albums/ss283/indianpatriot/1836745_3882160430455_2017842115_o1_zps25649615.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}*/
+}
+img{
+    width:50%;
+    height : 50%;
+    border-radius: 20px;
+}
+
+#Topic1{
+    margin-bottom: 50px;
+    font-size: 300%;
+}
+
+.Picture{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+h6{
+    background-color: white;
+    width: 50%;
+    margin:auto;
+}
+
+
