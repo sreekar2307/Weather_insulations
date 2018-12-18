@@ -233,3 +233,10 @@ body{
 	background-repeat: no-repeat;
 }*/
 }
+.list{
+	align-content: center;
+}
+
+li{
+	font-size: 100%
+}
